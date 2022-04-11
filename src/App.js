@@ -9,10 +9,8 @@ function App() {
   const handleScore=(value)=>{
     //condition
     setScore(score+value)
-    
-  }
-  
-  const handleWicket=(value)=>{
+   }
+    const handleWicket=(value)=>{
     //condition
     setWicket(wicket+value)
   }
@@ -26,30 +24,29 @@ function App() {
     <div className="banner">
       <div>
         Score:{score}
-        <h1 className="scoreCount">Add Score
-          
-           <button onClick={handleScore(1)}>Add 1</button>
-           <button onClick={handleScore(1)}>Add 4</button>
-           <button onClick={handleScore(1)}>Add 6</button> 
-           
-          
-        </h1>
+        <h1 className="scoreCount">Add Score</h1>
+          <div>
+           <button onClick={()=>{handleScore(1)}}>Add 1</button>
+           <button onClick={()=>{handleScore(1)}}>Add 4</button>
+           <button onClick={()=>{handleScore(1)}}>Add 6</button> 
+            </div>
+       
       </div>
       <div>
         Wicket:{wicket}
-        <h1 className="wicketCount">
-           <button onClick={handleWicket(1)}>Add 1</button>
-            </h1>
+        <h1 className="wicketCount"> </h1>
+           <button onClick={()=>{handleWicket(1)}}>Add 1</button>
+            
       </div>
       <div>
-        Over:{Math.floor(ball/6).ball%6}
-        <h1 className="overCount">
-          <button onClick={handleball(1)}>Add 1</button>
-       </h1>
+        Over:{Math.floor(ball/6) (ball%6)}
+        <h1 className="overCount"> </h1>
+          <button onClick={()=>{handleball(1)}}>Add 1</button>
+      
       </div>
     </div>
 <h1>{score>100?"India Won":""}</h1>
-    {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */}
+   
   </div>
   );
 }
