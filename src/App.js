@@ -27,8 +27,8 @@ function App() {
         <h1 className="scoreCount">Add Score</h1>
           <div>
            <button onClick={()=>{handleScore(1)}}>Add 1</button>
-           <button onClick={()=>{handleScore(1)}}>Add 4</button>
-           <button onClick={()=>{handleScore(1)}}>Add 6</button> 
+           <button onClick={()=>{handleScore(4)}}>Add 4</button>
+           <button onClick={()=>{handleScore(6)}}>Add 6</button> 
             </div>
        
       </div>
