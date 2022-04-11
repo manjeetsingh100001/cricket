@@ -39,7 +39,8 @@ function App() {
             
       </div>
       <div>
-        Over:{Math.floor(ball/6) (ball%6)}
+        Over:
+        
         <h1 className="overCount"> </h1>
           <button onClick={()=>{handleball(1)}}>Add 1</button>
       
